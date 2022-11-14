@@ -6,16 +6,11 @@
 		<link rel="icon" href="images/window.jpg">
 		<link rel="stylesheet" href="css/html5reset.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap" rel="stylesheet">
 		<title>Travel Blog</title>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4L0T8N0G40"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4L0T8N0G40');
-</script>
 	</head>
 
 	<body>
@@ -23,11 +18,11 @@
 		<header>
 			<br>
 			<nav>
-				<ul>
-					<a href="index.html" class='active-page'>Home</a>
-					<a href="gallery.html">Gallery</a>
-					<a href="tulum.html">Tulum</a>
-					<a href="phuket.html">Phuket</a>
+				<ul class="nav_links">
+					<li><a href="index.html" class='active-page'>Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="tulum.html">Tulum</a></li>
+					<li><a href="phuket.html">Phuket</a></li>
 				</ul>
 			</nav>
 		<div class="skip"><a href="#main">Skip to Main Content</a></div>
@@ -38,13 +33,24 @@
 	<main id="main">
         <br>
         <br>
-		<figure class="img-hover-zoom">
-			<img src="images/window.jpg" alt="window seat of plane" width="500"/>
-		</figure>
+		<div class="quote">
+			<h2>"What's on my bucket list? Everywhere."</h2>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</h2>
+		</div>
         <br>
-        <h1>Travel Blog</h1>
         <br>
-        <h2> Welcome to my travel diary!</h2>
+        <h1> Welcome to my travel diary!</h1>
+			<i class="fa-light fa-book-open"></i>
         <br>
 		<p>
 			On this website I'll be posting about my recent out of country travels and documnting the trip details. I'll be
@@ -63,6 +69,36 @@
             neighboring countries if possible. 
             
 		</p>
+		
+		<!-- modify this form HTML and place wherever you want your form -->
+		
+		<form action="https://formspree.io/f/mjvzlblb" method="POST">
+			<fieldset>
+				<legend>Request a travel guide!</legend>
+				<div class="request" id="fn">
+					<div>
+						<label for="fullname"><i class="fa-solid fa-user"></i> Full Name</label>
+						<input type="text" name="name" id="fullname" placeholder="Enter your name">
+					</div>
+					<div>
+						<label for="email" id="ea"><i class="fa-solid fa-envelope"></i> Email Address</label>
+						<input type="email" name="email" id="email" placeholder="Enter your email">
+					</div>
+					<div>
+						<label for="subject" id="sub"><i class="fa-solid fa-magnifying-glass-arrow-right"></i> Subject</label>
+						<input type="text" name="subject" id="subject" placeholder="Enter your subject">
+					</div>
+					<div>
+						<label for="message" id="msg"><i class="fa-solid fa-comment"></i> What's on your mind?</label>
+						<textarea id="message" name="message" placeholder="Enter your message"></textarea>
+					</div>
+						<input type="submit" value="Submit">
+					</div>
+			</fieldset>	
+
+
+
+		</form>
 		
 	</main>
 
