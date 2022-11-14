@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
+
 /* Skip to Main function */
 .skip a {
     position: absolute;
@@ -14,9 +16,40 @@
 
 }
 
+.quote {
+  background-image: url(../images/window.jpg);
+  background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+  content: "";
+  /* position: relative; */
+
+}
+
 a.active-page
 {
     font-weight: bold;
+}
+
+.nav_links {
+	list-style: none;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 5px;
+}
+
+.nav_links li a {
+	/* padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border-radius: 50px; */
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+	color: #3b1e07;
 }
 
 img {
@@ -25,13 +58,13 @@ img {
 	margin-top: 5px;
 	border-radius: 10px;
     /* height: 400px;
-    width: 300px;
+    
     padding: 10px 10px 10px 20px;
   */
 }
 
 .galleryimg {
-    width: 80%;
+  width: 80%;
 	margin-top: 5px;
 	border-radius: 10px;
 }
@@ -52,6 +85,22 @@ img {
   vertical-align: middle;
 }
 
+.request{
+  padding: 20px;
+  background:white;
+  border: black solid;
+  border-radius: 10px;
+  display: block;
+  /* grid-template-columns: 350px 350px; */
+  row-gap: 20px;
+  text-align: stretch;
+  justify-content: space-between;
+}
+
+  form{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
   
   * {
     background-color: #958f88;
@@ -71,7 +120,26 @@ img {
   .img-hover-zoom:hover img {
     transform: scale(1.1);
   }
+ 
+  .gallerypics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .gallerypics img {
+    width: 30vw;
+    margin: 10px;
+  }
+
+  
+
+  /* .galleryflex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  } */
 
   div {
     background-color: transparent;
@@ -92,6 +160,7 @@ img {
     list-style-type: disc;
     list-style-position: inside;
     margin-left: 10px;
+    
   }
   
   ul ul {
@@ -109,17 +178,21 @@ img {
   nav {
     overflow: hidden;
     display: flex;
-    padding: 20px;
+    padding: 15px;
     font-family: 'Open Sans', sans-serif;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
   }
+
+  nav ul {
+    list-style-type: none;
+  }
   
   nav a {
     /*float: left; */
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     font-size: 20px;
  
@@ -153,10 +226,12 @@ img {
   }
   
   h2 {
-    font-size: 30px;
+    font-family: 'Bebas Neue';
+  
+    font-size: 60px;
     line-height: 50px;
     background-color: transparent;
-    padding: 10px 40px 10px 50px;
+    padding: 80px 0px 10px 50px;
   }
   
   h1 {
@@ -164,7 +239,7 @@ img {
     line-height: 60px;
     color: #000000;
     font-weight: bold;
-    padding: 10px 40px 10px 50px;
+    padding: 10px 40px 10px 0px;
   }
   
   hr {
@@ -175,3 +250,43 @@ img {
     padding: 10px 40px 10px 50px;
   }
   
+  @media (prefers-reduced-motion: reduce) {
+    .logo {
+        animation: none;
+    }
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .post_card p {
+      width: 90vw;
+      margin: 10px;
+      text-align: center;
+    }
+    
+    .post_card img {
+      /* width: 95%; */
+      width: 90vw;
+      margin: 10px;
+    }
+  
+    .gallery {
+      display: grid;
+      grid-template-columns: 85%;
+      grid-template-rows: auto;
+      gap: 20px;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    aside {
+      grid-row: 3;
+      grid-column: 2;
+      padding: 10px 10px;
+    }
+  
+    footer {
+      grid-row: 4;
+    }
+  }
