@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
 
 /* Skip to Main function */
-.skip a {
+
+
+
+  .skip a {
     position: absolute;
     top: -40px;
     /* z-index: 1; */
-    color: black;
+    color: rgb(255, 255, 255);
 
 }
 
 .skip a:focus {
     position: absolute;
     top: 0;
-    color: black;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -53,7 +56,7 @@ a.active-page
 }
 
 img {
-    width: 30%;
+    width: 50%;
     padding: 10px 40px 10px 90px;
 	margin-top: 5px;
 	border-radius: 10px;
@@ -64,7 +67,7 @@ img {
 }
 
 .galleryimg {
-  width: 80%;
+  width: 100%;
 	margin-top: 5px;
 	border-radius: 10px;
 }
@@ -101,12 +104,12 @@ img {
 
   form{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-padding: 10px 40px 10px 30px;
+    padding: 10px 40px 10px 30px;
   }
 
   
   * {
-    background-color: #958f88;
+    background-color: #5c5855;
     color: white;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
@@ -132,17 +135,11 @@ padding: 10px 40px 10px 30px;
   }
 
   .gallerypics img {
-    width: 30vw;
+    width: 40%;
     margin: 10px;
   }
 
   
-
-  /* .galleryflex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  } */
 
   div {
     background-color: transparent;
@@ -240,7 +237,7 @@ padding: 10px 40px 10px 30px;
   h1 {
     font-size: 38px;
     line-height: 60px;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
     padding: 10px 40px 10px 20px;
   }
@@ -248,7 +245,7 @@ padding: 10px 40px 10px 30px;
   h4 {
     font-size: 30px;
     line-height: 60px;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
     padding: 30px 0px 10px 15px;
   }
@@ -261,61 +258,77 @@ padding: 10px 40px 10px 30px;
     padding: 10px 40px 10px 50px;
   }
   
-  @media (prefers-reduced-motion: reduce) {
-    .logo {
-        animation: none;
+  @keyframes animate {
+    from {
+        width: 25px;
+        opacity: 0;
+    } to {
+        width: 200px;
+        opacity: 1;
     }
-  }
+}
 
-  @keyframes logo {
-    0% {
-      transform: rotate(0deg);
-      left: 0px;
-    }
-    25% {
-      transform: rotate(30deg);
-      left: 0px;
-    }
-    50% {
-      transform: rotate(0deg);
-      left: 300px;
-    }
-    55% {
-      transform: rotate(0deg);
-      left: 300px;
-    }
-    70% {
-      transform: rotate(0deg);
-      left: 300px;
-    }
-    100% {
-      transform: rotate(-360deg);
-      left: 0px;
-    }
-  }
+
+#galleryimage {
+    background: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: animate 2.5s;
+    width: 200px;
+}
   
+  /* des grid */
 
-  @media screen and (max-width: 1000px) {
-    .post_card p {
+  @media screen and (min-width: 900px) {
+    /* .post_card p {
       width: 90vw;
       margin: 10px;
       text-align: center;
     }
     
     .post_card img {
-      /* width: 95%; */
+      /* width: 95%; */ /*
       width: 90vw;
       margin: 10px;
-    }
-  
+    } */
+   
     .gallery {
-      display: grid;
-      grid-template-columns: 85%;
+      display: flex;
+      /* grid-template-columns: 85%;
       grid-template-rows: auto;
       gap: 20px;
       justify-items: center;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
+      flex-direction: row;
+      flex-wrap: wrap;
+    }  
+
+   /*tablet*/ 
+  @media screen and (min-width: 600px) {
+    /* .post_card p {
+      width: 90vw;
+      margin: 10px;
+      text-align: center;
+    }
+    
+    .post_card img {
+      /* width: 95%; */ /*
+      width: 90vw;
+      margin: 10px;
+    } */
+  
+    .gallery {
+      display: flex;
+      /* grid-template-columns: 85%;
+      grid-template-rows: auto;
+      gap: 20px;
+      justify-items: center;
+      justify-content: center;
+      align-items: center; */
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   
     aside {
@@ -328,3 +341,4 @@ padding: 10px 40px 10px 30px;
       grid-row: 4;
     }
   }
+}
