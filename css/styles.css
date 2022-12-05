@@ -29,10 +29,10 @@
 
 }
 
-a.active-page
+/* a.active-page
 {
     font-weight: bold;
-}
+} */
 
 .nav_links {
 	list-style: none;
@@ -52,7 +52,7 @@ a.active-page
 }
 
 .nav_links li a:hover {
-	color: #3b1e07;
+	color: #792e2e;
 }
 
 img {
@@ -198,9 +198,9 @@ img {
  
   }
   
-  nav a:hover {
+  /* nav a:hover {
     font-weight: 1000;
-  }
+  } */
 
   nav a.active-page {
     font-weight: 1000;
