@@ -50,7 +50,7 @@
 }
 
 .nav_links li a:hover {
-	color: #792e2e;
+	color: #be8e8e;
 }
 
 
@@ -134,7 +134,7 @@ img {
 
 .request{
   padding: 20px;
-  background:#5c5855;
+  background:rgb(113, 97, 97);
   display:inline-block;
   border-radius: 10px;
   
