@@ -1,23 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
 
-
-
 /* Skip to Main function */
 
-
-
-  .skip a {
-    position: absolute;
-    top: -40px;
-    /* z-index: 1; */
-    color: rgb(255, 255, 255);
+.skip a {
+  position: absolute;
+  top: -40px;
+  /* z-index: 1; */
+  color: rgb(255, 255, 255);
 
 }
 
 .skip a:focus {
-    position: absolute;
-    top: 0;
-    color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -116,12 +112,32 @@ img {
   margin-top: 8px;
   vertical-align: middle;
 }
+#fullname {
+  background-color: aliceblue;
+}
+
+#email {
+  background-color: aliceblue;
+}
+
+#subject {
+  background-color: aliceblue;
+}
+
+#message {
+  background-color: aliceblue;
+}
+
+
+
+
 
 .request{
   padding: 20px;
   background:rgb(113, 97, 97);
   display:inline-block;
   border-radius: 10px;
+  
   /* border: black solid;
   
   display: block; */
@@ -263,6 +279,10 @@ img {
     padding: 80px 0px 10px 50px;
   }
   
+  legend {
+    font-size: 22px;
+    text-decoration: bold;
+  }
   h1 {
     font-size: 38px;
     line-height: 60px;
