@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
 
+
+
 /* Skip to Main function */
 
 
@@ -55,6 +57,27 @@
 	color: #792e2e;
 }
 
+
+
+/* Grid Area Names */
+
+.home header {
+	grid-area: header;
+}
+
+.home main {
+	grid-area: main;
+}
+
+.home aside {
+	grid-area: aside;
+}
+
+.home footer {
+	grid-area: footer;
+}
+
+
 img {
     width: 50%;
     padding: 10px 40px 10px 90px;
@@ -82,6 +105,12 @@ img {
     flex: 50%;
   padding: 0 4px;
 }
+
+/* .home-grid {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 10px;
+} */
 
 .column img {
   margin-top: 8px;
@@ -257,7 +286,8 @@ img {
     opacity: 10%;
     padding: 10px 40px 10px 50px;
   }
-  
+
+    
   @keyframes animate {
     from {
         width: 25px;
@@ -277,7 +307,8 @@ img {
     animation: animate 2.5s;
     width: 200px;
 }
-  
+
+
   /* des grid */
 
   @media screen and (min-width: 900px) {
@@ -329,6 +360,13 @@ img {
       align-items: center; */
       flex-direction: row;
       flex-wrap: wrap;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      /* Turn off animation */
+      #galleryimage {
+        animation: none;
+      }
     }
   
     aside {
