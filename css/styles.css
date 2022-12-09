@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
 
+
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: aside; }
+.item5 { grid-area: footer; }
+
 /* Skip to Main function */
 
 .skip a {
@@ -26,6 +32,7 @@
   /* position: relative; */
 
 }
+
 
 /* a.active-page
 {
@@ -55,34 +62,11 @@
 
 
 
-/* Grid Area Names */
-
-.home header {
-	grid-area: header;
-}
-
-.home main {
-	grid-area: main;
-}
-
-.home aside {
-	grid-area: aside;
-}
-
-.home footer {
-	grid-area: footer;
-}
-
-
 img {
-    width: 50%;
-    padding: 10px 40px 10px 90px;
+  width: 50%;
+  padding: 10px 40px 10px 90px;
 	margin-top: 5px;
 	border-radius: 10px;
-    /* height: 400px;
-    
-    padding: 10px 10px 10px 20px;
-  */
 }
 
 .galleryimg {
@@ -98,15 +82,9 @@ img {
   }
 
 .column {
-    flex: 50%;
+  flex: 50%;
   padding: 0 4px;
 }
-
-/* .home-grid {
-  display: grid;
-  grid-template-rows: auto;
-  row-gap: 10px;
-} */
 
 .column img {
   margin-top: 8px;
@@ -130,192 +108,184 @@ img {
 
 
 
-
-
 .request{
   padding: 20px;
-  background:rgb(113, 97, 97);
+  background:#5c5855;
   display:inline-block;
   border-radius: 10px;
   
-  /* border: black solid;
-  
-  display: block; */
-  /* grid-template-columns: 350px 350px; */
-  /* row-gap: 20px;
-  text-align: stretch;
-  justify-content: space-between; */
 }
 
-  form{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    padding: 10px 40px 10px 30px;
-  }
+form{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 40px 10px 30px;
+}
 
   
-  * {
-    background-color: #5c5855;
-    color: white;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  
-  .img-hover-zoom{
-    height: 300px; /* [1.1] Set it as per your need */
-    overflow: hidden; 
-  }
-  .img-hover-zoom img {
-    transition: transform .5s ease;
-  }
-  
-  /* transforming the image when container gets hovered */
-  .img-hover-zoom:hover img {
-    transform: scale(1.1);
-  }
+* {
+  background-color: #5c5855;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.img-hover-zoom{
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; 
+}
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
  
-  .gallerypics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+.gallerypics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .gallerypics img {
-    width: 30%;
-    margin: 5px;
-  }
+.gallerypics img {
+  width: 30%;
+  margin: 5px;
+}
 
   
+p {
+  font-weight: 50;
+  line-height: 30px;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 10px 40px 10px 50px;
+}
 
-  div {
-    background-color: transparent;
-  }
+ul {
+  font-weight: 50;
+  line-height: 32px;
+  font-size: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 10px;
   
-  p {
-    font-weight: 50;
-    line-height: 30px;
-    font-size: 20px;
-    background-color: transparent;
-    padding: 10px 40px 10px 50px;
-  }
-  
-  ul {
-    font-weight: 50;
-    line-height: 32px;
-    font-size: 20px;
-    list-style-type: disc;
-    list-style-position: inside;
-    margin-left: 10px;
+}
+
+ul ul {
+  font-size: 18px;
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+em {
+  font-style: italic;
+  color: #ffb86f;
+}
+
+nav {
+  overflow: hidden;
+  display: flex;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  /*float: left; */
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+body {
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+/* nav a:hover {
+  font-weight: 1000;
+} */
+
+nav a.active-page {
+  font-weight: 1000;
+  text-decoration: underline;
+}
+
+a {
+  color: #ffafc5;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 30px;
+  color: #ffb86f;
+  background-color: transparent;
+  padding: 10px 40px 10px 50px;
+}
+
+h2 {
+  font-family: 'Bebas Neue';
+
+  font-size: 60px;
+  line-height: 50px;
+  background-color: transparent;
+  padding: 80px 0px 10px 50px;
+}
+
+legend {
+  font-size: 22px;
+  text-decoration: bold;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 40px 10px 20px;
+}
+
+h4 {
+  font-size: 30px;
+  line-height: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 30px 0px 10px 15px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid;
+  width: 94%;
+  opacity: 10%;
+  padding: 10px 40px 10px 50px;
+}
+
     
+@keyframes animate {
+  from {
+      width: 25px;
+      opacity: 0;
+  } to {
+      width: 200px;
+      opacity: 1;
   }
-  
-  ul ul {
-    font-size: 18px;
-    list-style-type: circle;
-    list-style-position: inside;
-    margin-left: 20px;
-  }
-  
-  em {
-    font-style: italic;
-    color: #ffb86f;
-  }
-  
-  nav {
-    overflow: hidden;
-    display: flex;
-    padding: 15px;
-    font-family: 'Open Sans', sans-serif;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
-  }
-
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav a {
-    /*float: left; */
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 20px;
- 
-  }
-  
-  /* nav a:hover {
-    font-weight: 1000;
-  } */
-
-  nav a.active-page {
-    font-weight: 1000;
-    text-decoration: underline;
-  }
-  
-  a {
-    color: #ffafc5;
-    text-decoration: none;
-    background-color: transparent;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  h3 {
-    font-size: 26px;
-    line-height: 30px;
-    color: #ffb86f;
-    background-color: transparent;
-    padding: 10px 40px 10px 50px;
-  }
-  
-  h2 {
-    font-family: 'Bebas Neue';
-  
-    font-size: 60px;
-    line-height: 50px;
-    background-color: transparent;
-    padding: 80px 0px 10px 50px;
-  }
-  
-  legend {
-    font-size: 22px;
-    text-decoration: bold;
-  }
-  h1 {
-    font-size: 38px;
-    line-height: 60px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 40px 10px 20px;
-  }
-
-  h4 {
-    font-size: 30px;
-    line-height: 60px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 30px 0px 10px 15px;
-  }
-  
-  hr {
-    border: 0;
-    border-top: 2px solid;
-    width: 94%;
-    opacity: 10%;
-    padding: 10px 40px 10px 50px;
-  }
-
-    
-  @keyframes animate {
-    from {
-        width: 25px;
-        opacity: 0;
-    } to {
-        width: 200px;
-        opacity: 1;
-    }
 }
 
 
@@ -335,12 +305,6 @@ img {
 
     .gallery {
       display: flex;
-      /* grid-template-columns: 85%;
-      grid-template-rows: auto;
-      gap: 20px;
-      justify-items: center;
-      justify-content: center;
-      align-items: center; */
       flex-direction: row;
       flex-wrap: wrap;
     }  
@@ -350,12 +314,6 @@ img {
   
     .gallery {
       display: flex;
-      /* grid-template-columns: 85%;
-      grid-template-rows: auto;
-      gap: 20px;
-      justify-items: center;
-      justify-content: center;
-      align-items: center; */
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -368,11 +326,16 @@ img {
     }
 
   
-    aside {
-      grid-row: 3;
-      grid-column: 2;
-    }
+    
+aside {
+  padding-bottom: 10px;
+  color: aqua;
+  text-align: center;
+  margin-left: 900px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   
+}  
     footer {
       grid-row: 4;
     }
