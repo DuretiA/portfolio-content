@@ -6,7 +6,6 @@
 .skip a {
   position: absolute;
   top: -40px;
-  /* z-index: 1; */
   color: rgb(255, 255, 255);
 
 }
@@ -24,15 +23,8 @@
 	background-position: 50% 0;
 	background-size: cover;
   content: "";
-  /* position: relative; */
 
 }
-
-
-/* a.active-page
-{
-    font-weight: bold;
-} */
 
 .nav_links {
 	list-style: none;
@@ -44,9 +36,6 @@
 }
 
 .nav_links li a {
-	/* padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1);
-	border-radius: 50px; */
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
 }
@@ -54,8 +43,6 @@
 .nav_links li a:hover {
 	color: #be8e8e;
 }
-
-
 
 img {
   width: 50%;
