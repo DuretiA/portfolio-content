@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
 
 
-.item1 { grid-area: header; }
-.item3 { grid-area: main; }
-.item4 { grid-area: aside; }
-.item5 { grid-area: footer; }
-
 /* Skip to Main function */
 
 .skip a {
